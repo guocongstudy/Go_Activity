@@ -122,11 +122,11 @@ func main() {
 	fmt.Println(points[0][1]) //第0组中的第2个 {1,2,3}中的2
 
 	//数组是值类型
-	slice01:=[]int{1,2,3}
-	slice02:=slice01
+	slice01 := []int{1, 2, 3}
+	slice02 := slice01
 
-	slice02[0]=10
-	fmt.Println(slice01,slice02)
+	slice02[0] = 10
+	fmt.Println(slice01, slice02)
 }
 
 //len（）长度是指当前切片的长度，cap（）容量是指切片底层数组的长度
