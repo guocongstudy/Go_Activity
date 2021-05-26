@@ -20,8 +20,8 @@ func main() {
 	sliceA[0] = "z"
 	fmt.Println(arrayA, array)
 	fmt.Println(sliceA, slice)
-	fmt.Printf("%p %p\n",&arrayA,&array)//%p取地址符
-	fmt.Printf("%p,%p\n",&sliceA,&slice)///指针类型和引用数据类型在赋值后变量的地址并不相同，只是引用类型在底层共享数据结构
+	fmt.Printf("%p %p\n", &arrayA, &array) //%p取地址符
+	fmt.Printf("%p,%p\n", &sliceA, &slice) ///指针类型和引用数据类型在赋值后变量的地址并不相同，只是引用类型在底层共享数据结构
 	//int bool float32 float64 array slice map(映射) 指针
 	/*
 	 值类型：int,bool,float, 指针

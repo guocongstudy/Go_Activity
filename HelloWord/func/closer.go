@@ -2,25 +2,25 @@ package main
 
 import "fmt"
 
-func main(){
-	name :="KK"
+func main() {
+	name := "KK"
 
-	add2 :=func(n int)int{
-		return n+2
-		}
+	add2 := func(n int) int {
+		return n + 2
+	}
 
 	fmt.Println(add2(4))
-	func(){
+	func() {
 		fmt.Println(name)
 	}()
 
-	addBase :=func(base int) func(int)int{
+	addBase := func(base int) func(int) int {
 		//返回函数
-		return func(n int)int{
-			return base +n
+		return func(n int) int {
+			return base + n
 		}
 	}
-	add8 :=addBase
-	fmt.Printf("%T\n",add8)
+	add8 := addBase
+	fmt.Printf("%T\n", add8)
 	fmt.Println(add8(10))
 }
