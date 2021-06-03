@@ -31,3 +31,8 @@
 
 
 包：代码最基本的分发单位。
+
+
+深度理解go 就要看官方文档
+地址：golang.google.cn/doc/
+Create a module /writing web application/how to write go code 这几个文件看一下。

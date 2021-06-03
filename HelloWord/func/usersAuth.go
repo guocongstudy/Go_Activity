@@ -27,13 +27,13 @@ package main
 //	}
 //	return false
 //}
-//func printUser(pk int,user map[string]string){
+//func printUser(pk int,users map[string]string){
 //	fmt.Println("ID:",pk)
-//	fmt.Println("名字:",user["name"])
-//	fmt.Println("出生日期:",user["birthday"])
-//	fmt.Println("联系方式:",user["tel"])
-//	fmt.Println("联系地址:",user["addr"])
-//	fmt.Println("备注:",user["desc"])
+//	fmt.Println("名字:",users["name"])
+//	fmt.Println("出生日期:",users["birthday"])
+//	fmt.Println("联系方式:",users["tel"])
+//	fmt.Println("联系地址:",users["addr"])
+//	fmt.Println("备注:",users["desc"])
 //}
 //
 //func query(users map[int]map[string]string) {
@@ -61,24 +61,24 @@ package main
 //
 //func add(users map[int]map[string]string) {
 //	id := getId(users)
-//	user := inputUser()
-//	users[id]=user
+//	users := inputUser()
+//	users[id]=users
 //	fmt.Println("[+]添加成功")
 //}
 //func modify(users map[int]map[string]string){
 //	idString :=inputString("请输入修改用户ID：")
 //	if id,err :=strconv.Atoi(idString);err ==nil{
-//		if user,ok :=users[id];ok{
+//		if users,ok :=users[id];ok{
 //			fmt.Println("将修改的用户信息：")
-//			fmt.Println(user)
+//			fmt.Println(users)
 //			input:=inputString("确定修改(Y/N)?")
 //			if input =="y"||input =="Y"{
-//				user["name"] = inputString("请输入名字：")
-//				user["birthday"] = inputString("请输入出生日期（2001-01-01）：")
-//				user["tel"] = inputString("请输入联系方式：")
-//				user["addr"] = inputString("请输入联系地址：")
-//				user["desc"] = inputString("请输入备注：")
-//				users[id] =user
+//				users["name"] = inputString("请输入名字：")
+//				users["birthday"] = inputString("请输入出生日期（2001-01-01）：")
+//				users["tel"] = inputString("请输入联系方式：")
+//				users["addr"] = inputString("请输入联系地址：")
+//				users["desc"] = inputString("请输入备注：")
+//				users[id] =users
 //			}
 //		}else{
 //			fmt.Println("用户ID不存在")
@@ -95,14 +95,14 @@ package main
 //	fmt.Scan(&input)
 //	return strings.TrimSpace(input)
 //}
-//func inputUser(user map[string]string){
-//	user :=map[string]string{}
-//	user["name"] = inputString("请输入名字：")
-//	user["birthday"] = inputString("请输入出生日期（2001-01-01）：")
-//	user["tel"] = inputString("请输入联系方式：")
-//	user["addr"] = inputString("请输入联系地址：")
-//	user["desc"] = inputString("请输入备注：")
-//	return user
+//func inputUser(users map[string]string){
+//	users :=map[string]string{}
+//	users["name"] = inputString("请输入名字：")
+//	users["birthday"] = inputString("请输入出生日期（2001-01-01）：")
+//	users["tel"] = inputString("请输入联系方式：")
+//	users["addr"] = inputString("请输入联系地址：")
+//	users["desc"] = inputString("请输入备注：")
+//	return users
 //}
 //
 //func main() {
