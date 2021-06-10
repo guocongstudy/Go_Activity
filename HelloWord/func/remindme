@@ -36,3 +36,22 @@
 深度理解go 就要看官方文档
 地址：golang.google.cn/doc/
 Create a module /writing web application/how to write go code 这几个文件看一下。
+
+3.读取文件：
+ a.文件位置
+ b.打开文件
+ c.读取文件内容
+ d.关闭文件
+
+ 写文件：
+  a.创建文件
+  b.写入内容
+  c.关闭
+
+  追加：
+
+  文件路径：
+  绝对路径：程序不管在什么位置打开的文件、操作的文件都不会变化（从跟路径/盘符开始书写的路径）
+  相对路径：与程序的位置有关系（）
+         程序放置的位置： c:/htgolang/main.exe,e:/htgolang/main.exe
+         程序运行的位置: e:/ c:/htgolang/main.exe

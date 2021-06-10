@@ -1,0 +1,4 @@
+1."读文件"视屏中用到的网址
+https://golang.google.cn/pkg/os/#File.Read
+2.在页面中进行抓取关键字，快捷键
+“Ctrl+f” 会出现一个小弹框，在弹框里面输入就行
