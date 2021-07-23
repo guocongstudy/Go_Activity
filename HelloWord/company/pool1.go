@@ -11,6 +11,7 @@ type Pool struct {
 	new     New
 }
 
+// New 是定义了一个叫做New2的函数类型，返回一个interface
 type New func() interface{}
 
 func NewPool(new New) *Pool {
@@ -43,6 +44,7 @@ func main() {
 		fmt.Println("new")
 		return 1
 	})
+	fmt.Println(pool)
 }
 
 //9:05

@@ -1,0 +1,23 @@
+队列
+queue :=make([]int,0)
+先进先出
+入
+queue =append(queue,x)
+
+出
+queue[0]
+queue =queue[1:]
+
+堆栈
+stack :=make([]int,0)
+先进先出
+
+入
+stack =append(stack,x)
+出
+1.stack[len(stack)-1]
+
+2.stack[0:len(stack)-1](开始包含，结束不包含)
+
+//监听 0.0.0.0：9999端口
+//等待客户端链接，当客户端链接完成后，给客户端发送一个当前时间，关闭客户端
