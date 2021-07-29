@@ -25,6 +25,7 @@ func (c *Calc) Add(rq AddRequest, resp *AddResponse) error {
 	return nil
 }
 
+<<<<<<< HEAD
 type AAA struct {
 }
 
@@ -33,6 +34,8 @@ func (a *AAA) Add(req AddRequest, resp *AddResponse) error {
 	return nil
 }
 
+=======
+>>>>>>> 4ee319891639f31d5644855ace938bfe2686c77a
 //远程服务 Add(1,2)int
 func main() {
 	//req :=AddRequest{1,2}
@@ -47,8 +50,11 @@ func main() {
 
 	//启动服务
 	listener, _ := net.Listen("tcp", "0.0.0.0:8888")
+<<<<<<< HEAD
 	rpc.Accept(listener)
 	listener.Close()
 
+=======
+>>>>>>> 4ee319891639f31d5644855ace938bfe2686c77a
 	//2:43:32
 }
