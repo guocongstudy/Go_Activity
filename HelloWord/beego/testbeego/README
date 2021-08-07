@@ -14,3 +14,23 @@ host:port?c=xxx&a=xxx
 英文字母组成 a-zA-Z \w
 由4-16位的大小写英文字母数字，下划线组成
 [0,9a-zA-Z_]{4,16}
+
+
+处理器函数
+url
+GET 获取
+POST 创建/更新/
+PUT
+DELETE
+
+restapi 一种风格web API
+resource/
+GET 获取所有资源
+POST 创建资源
+
+GET过去某个资源的详情
+DELETE 删除某个资源
+PUT 更新某个资源
+
+ResourceController
+resource/?:id/
