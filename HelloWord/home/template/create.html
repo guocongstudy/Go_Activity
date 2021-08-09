@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>新建</title>
 </head>
 <body>
-$END$
+<form action="/create/" method="POST">
+    <label>姓名</label><input name="name" value=""/><br/>
+    <label>性别</label>
+    <input name="sex" type="radio" value="1" checked="checked"/>男
+    <inout name="sex" type="radio" value="0" />女<br/>
+
+    <label>住址</label><textarea  name="addr"><br/>
+    <input type ="submit" value="创建"/>
+</form>>
 </body>
 </html>
