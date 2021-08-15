@@ -1,0 +1,6 @@
+create teble teblename(
+
+  列的信息 列名 列类型 列的描述
+
+)engine=INNODB default charset utf8mb4；
+
