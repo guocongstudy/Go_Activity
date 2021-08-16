@@ -1,1 +1,1 @@
-package x
+package main

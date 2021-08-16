@@ -1,4 +1,4 @@
-package x
+package main
 
 //数据看板培训人数
 func SumNumberTrainingRouter(router *gin.RouterGroup) {
