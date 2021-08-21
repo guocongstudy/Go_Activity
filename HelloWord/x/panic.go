@@ -8,6 +8,13 @@ func goo(x int) int {
 }
 
 func foo(a, b int) int {
+	defer func() {
+		//recover只有放到defer函数里面他才会生效
+		if err := recover(); err != nil {
+			//deal err
+			fmt.Printf("发生panic，error is :%s\n", err)
+		}
+	}()
 	c := a*3 + 8
 	defer fmt.Printf("1st defer")
 	d := c + 5
