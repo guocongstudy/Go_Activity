@@ -43,7 +43,7 @@ func (u *User) TableIndex() [][]string {
 }
 
 func main() {
-	dsn := "root:password@tcp(10.0.0.2:3306)/test?parseTime=true&loc=Local&charset=utf8mb4"
+	dsn := "root:password@tcp(127.0.0.1:3306)/mysql?parseTime=true&loc=Local&charset=utf8mb4"
 	//导入驱动(初始化)
 	//导入orm包
 	//在ORM包中注册驱动（mysql）
@@ -73,26 +73,24 @@ func main() {
 	//fmt.Println("klfdjklfds")
 
 	ormer := orm.NewOrm()
-	
-	birthday ,_:=time.Parse("2006-01-02","1879-01-02")
-	
+
+	birthday, _ := time.Parse("2006-01-02", "1879-01-02")
+
 	user := &User{
 		Name:     "kk",
 		Password: "123",
-		Birthday:  &birthday,
+		Birthday: &birthday,
 	}
 	orm.Debug = true
-	
-	
+
 	fmt.Println(user)
 	fmt.Println(ormer.Insert(user))
 	fmt.Println(user)
 	fmt.Println(ormer.Insert(user))
 	// 增，删，改，查
-	
-	//批量
-	users :=[]*User{}
-	for i :=0;i<= {
-		
-	}
+
+	//查询
+	queryset := ormer.QueryTable(&User{})
+	//满足条件
+	fmt.Println(queryset.Count())
 }
