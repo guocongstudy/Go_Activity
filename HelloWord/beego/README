@@ -4,3 +4,49 @@ create teble teblename(
 
 )engine=INNODB default charset utf8mb4；
 
+1.会话 session
+ sesssion服务器段存储
+     内存
+     本地磁盘文件
+     数据库
+  序列化
+  sid=>session id
+  set-cookie session id
+  cookie
+
+  session
+    配置 => 配置文件 conf/app.conf
+           ini格式配置文件
+           【default】
+            key=value
+            [name]
+            key=value
+
+      是否开启:sessionOn=true/false
+      存储的类型：sessionProvider=memory
+      存储的位置:SessionProviderConfig
+      失效时间:SessionGCMaxLifetime=3600
+             SessionCookieLiftTime
+      SID名称:SessionName=beegoSessionId
+    操作
+      获取
+          GetSession(key)interface{} 检查权限
+      更新
+          SetSession(kry,value) 登录认证成功
+      删除
+          DelSession(key)
+      销毁
+          DestorySession()  退出
+
+    gob编码
+       自定义类型：Regsiter()
+
+   Session存储数据：
+   1.尽量少
+   2.能用基本类型就用基本类型
+   3.自定义类型一定要gob注册
+   4.hash运算：MD5  彩虹表查询
+     text =>md5 =>hash
+     1234 =>md5 =>xxxxxx
+
+ 2.orm

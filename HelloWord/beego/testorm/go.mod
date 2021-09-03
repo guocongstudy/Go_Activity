@@ -1,4 +1,4 @@
-module Go_train-5/HelloWord
+module Go_train-5/HelloWord/beego/testorm
 
 go 1.16
 
