@@ -93,4 +93,7 @@ func main() {
 	queryset := ormer.QueryTable(&User{})
 	//满足条件
 	fmt.Println(queryset.Count())
+	var users []*User
+	fmt.Println(queryset.All(&users))
+	fmt.Println(users)
 }
